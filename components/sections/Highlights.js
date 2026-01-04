@@ -1,0 +1,64 @@
+"use client";
+
+import Button from "@/components/ui/Button";
+import Image from "next/image";
+
+export default function Highlights() {
+    return (
+        <section id="features" className="py-24 bg-brand-light/20 scroll-mt-20">
+            <div className="container mx-auto px-6 md:px-12">
+                <div className="flex flex-col lg:flex-row items-center gap-16">
+
+                    {/* Left: Text Content */}
+                    <div className="w-full lg:w-1/2 order-2 lg:order-1">
+                        <div className="mb-8">
+                            <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+                                Affordable solutions
+                            </span>
+                            <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-6">
+                                High-Quality and Friendly <br /> Services at Fair Prices
+                            </h2>
+                            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                                We provide comprehensive waterproofing services tailored to your needs.
+                                From residential leakage repair to large-scale commercial coatings,
+                                we ensure quality delivery at every step.
+                            </p>
+                            <Button href="https://wa.me/919354336487" className="rounded-md px-8">
+                                Get a quote
+                            </Button>
+                        </div>
+                    </div>
+
+                    {/* Right: Layered Images */}
+                    <div className="w-full lg:w-1/2 order-1 lg:order-2">
+                        <div className="relative h-[500px] w-full">
+                            {/* Main Image */}
+                            <div className="absolute top-0 right-0 w-4/5 h-4/5 rounded-2xl overflow-hidden shadow-2xl z-10">
+                                <Image
+                                    src="/image-7.jpg"
+                                    alt="Workers"
+                                    fill
+                                    className="object-cover"
+                                />
+
+                            </div>
+                            {/* Overlap Image */}
+                            <div className="absolute bottom-0 left-0 w-3/5 h-3/5 rounded-2xl overflow-hidden shadow-2xl border-4 border-white z-20">
+                                <Image
+                                    src="/image-8.jpg"
+                                    alt="Workers Details"
+                                    fill
+                                    className="object-cover"
+                                />
+
+                            </div>
+                            {/* Decorative */}
+                            <div className="absolute top-10 right-10 w-20 h-20 bg-brand-primary/20 rounded-full blur-2xl z-0"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    );
+}
