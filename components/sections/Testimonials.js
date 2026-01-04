@@ -73,11 +73,11 @@ const testimonials = [
 ];
 
 
-// Split into columns for the effect
-const col1 = [testimonials[0], testimonials[3], testimonials[1]];
-const col2 = [testimonials[2], testimonials[4], testimonials[5]];
-const col3 = [testimonials[1], testimonials[0], testimonials[3]];
-const col4 = [testimonials[5], testimonials[2], testimonials[4]];
+const col1 = [testimonials[0], testimonials[1], testimonials[2]];
+const col2 = [testimonials[3], testimonials[4], testimonials[5]];
+const col3 = [testimonials[6], testimonials[7], testimonials[8]];
+const col4 = [testimonials[9], testimonials[10], testimonials[11], testimonials[12]];
+
 
 import { Building2 } from "lucide-react";
 

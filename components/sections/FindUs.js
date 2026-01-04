@@ -74,7 +74,7 @@ export default function FindUs() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-gray-900 text-lg mb-1">Call Us</h3>
-                                        <p className="text-gray-600 font-medium">+91 76782 81211</p>
+                                        <p className="text-gray-900 font-bold text-xl">+91 76782 81211</p>
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ export default function FindUs() {
                                     </div>
                                     <div className="overflow-hidden">
                                         <h3 className="font-bold text-gray-900 text-lg mb-1">Email Now</h3>
-                                        <p className="text-gray-600 font-medium text-sm break-words">
+                                        <p className="text-gray-900 font-bold text-base break-words">
                                             kumarwaterproofingsolution@gmail.com
                                         </p>
                                     </div>
@@ -102,7 +102,7 @@ export default function FindUs() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-gray-900 text-lg mb-1">GST Registration</h3>
-                                        <p className="text-gray-600 font-mono font-medium tracking-wide">
+                                        <p className="text-gray-900 font-bold font-mono tracking-wide">
                                             09MHQPK7164L1Z7
                                         </p>
                                     </div>
@@ -117,7 +117,7 @@ export default function FindUs() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-gray-900 text-lg mb-1">Head Office</h3>
-                                        <p className="text-gray-600 leading-relaxed">
+                                        <p className="text-gray-900 font-bold leading-relaxed">
                                             Vandana Enclave, Shital Vihar, Khora Colony, Sector 62, Ghaziabad, Noida, Uttar Pradesh 201020
                                         </p>
                                     </div>
@@ -132,7 +132,7 @@ export default function FindUs() {
                                     </div>
                                     <div>
                                         <h3 className="font-bold text-gray-900 text-lg mb-1">Branch Office</h3>
-                                        <p className="text-gray-600 leading-relaxed">
+                                        <p className="text-gray-900 font-bold leading-relaxed">
                                             H.No – S–319, School Block, Block S1, Shakarpur, Delhi – 110092
                                         </p>
                                     </div>
@@ -214,8 +214,8 @@ export default function FindUs() {
                                     type="submit"
                                     disabled={status === "loading"}
                                     className={`w-full py-4 px-6 rounded-xl font-bold text-lg text-white shadow-xl transition-all duration-300 ${status === "loading"
-                                            ? "opacity-75 cursor-not-allowed bg-green-500"
-                                            : "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-green-300 transform hover:-translate-y-1 hover:shadow-2xl"
+                                        ? "opacity-75 cursor-not-allowed bg-green-500"
+                                        : "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-green-300 transform hover:-translate-y-1 hover:shadow-2xl"
                                         }`}
                                 >
                                     {status === "loading" ? "Sending..." : "Send Message"}

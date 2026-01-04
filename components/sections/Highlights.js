@@ -23,8 +23,8 @@ export default function Highlights() {
                                 From residential leakage repair to large-scale commercial coatings,
                                 we ensure quality delivery at every step.
                             </p>
-                            <Button href="https://wa.me/919354336487" className="rounded-md px-8">
-                                Get a quote
+                            <Button href="tel:+917678281211" className="rounded-md px-8">
+                                Free Consultation
                             </Button>
                         </div>
                     </div>

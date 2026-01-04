@@ -11,7 +11,7 @@ export default function About() {
                     <div className="w-full lg:w-1/2">
                         <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/hero-2.jpg"
+                                src="/image-17.jpg"
                                 alt="About KWS Team"
                                 fill
                                 className="object-cover"
