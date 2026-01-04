@@ -5,11 +5,11 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <section id="about" className="py-24 bg-white scroll-mt-20">
+        <section id="about" className="py-16 md:py-24 bg-white scroll-mt-20">
             <div className="container mx-auto px-6 md:px-12">
-                <div className="flex flex-col lg:flex-row items-center gap-16 mb-16">
+                <div className="flex flex-col lg:flex-row items-center gap-12 md:gap-16 mb-16">
                     <div className="w-full lg:w-1/2">
-                        <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="relative h-[300px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                             <Image
                                 src="/image-17.jpg"
                                 alt="About KWS Team"
@@ -49,7 +49,7 @@ export default function About() {
 
                 {/* Mission & Vision Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="bg-slate-50 p-10 rounded-3xl border border-slate-100">
+                    <div className="bg-slate-50 p-6 md:p-10 rounded-3xl border border-slate-100">
                         <div className="w-14 h-14 bg-green-100 text-brand-primary rounded-xl flex items-center justify-center mb-6">
                             <Target size={32} />
                         </div>
