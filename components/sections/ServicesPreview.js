@@ -58,13 +58,13 @@ export default function ServicesPreview() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <div key={index} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                            <div className="w-14 h-14 bg-green-50 text-brand-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                        <div key={index} className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                            <div className="w-12 h-12 md:w-14 md:h-14 bg-green-50 text-brand-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors">
                                 <service.icon size={28} />
                             </div>
 
-                            <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                            <p className="text-gray-500 mb-6 leading-relaxed">{service.desc}</p>
+                            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                            <p className="text-gray-500 mb-4 md:mb-6 leading-relaxed">{service.desc}</p>
 
                             <div className="space-y-3 mb-8 border-t border-gray-50 pt-6">
                                 {service.features.map((feature, i) => (

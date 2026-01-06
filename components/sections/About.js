@@ -53,16 +53,16 @@ export default function About() {
                         <div className="w-14 h-14 bg-green-100 text-brand-primary rounded-xl flex items-center justify-center mb-6">
                             <Target size={32} />
                         </div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                        <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
                         <p className="text-gray-600 leading-relaxed">
                             To provide top-tier waterproofing and thermal insulation services that enhance the longevity and safety of structures, ensuring peace of mind for our clients through scientific and proven methods.
                         </p>
                     </div>
-                    <div className="bg-slate-50 p-10 rounded-3xl border border-slate-100">
+                    <div className="bg-slate-50 p-10 pb-24 md:pb-10 rounded-3xl border border-slate-100">
                         <div className="w-14 h-14 bg-green-100 text-brand-primary rounded-xl flex items-center justify-center mb-6">
                             <Award size={32} />
                         </div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                        <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
                         <p className="text-gray-600 leading-relaxed">
                             To be the most trusted and preferred partner for waterproofing solutions across India, known for innovation, quality, integrity and our unwavering commitment to customer satisfaction.
                         </p>
