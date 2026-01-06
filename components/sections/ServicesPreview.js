@@ -48,7 +48,7 @@ export default function ServicesPreview() {
             <div className="container mx-auto px-6 md:px-12">
                 <div className="text-center mb-16">
                     <span className="text-brand-primary font-bold tracking-wider uppercase text-sm mb-4 block">What We Do</span>
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4 lh-tight">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 lh-tight">
                         We Always Provide The Best Service
                     </h2>
                     <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
