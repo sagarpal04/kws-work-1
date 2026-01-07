@@ -44,25 +44,25 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md py-4" : "bg-white/90 backdrop-blur-md py-6"
+            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md py-2 md:py-4" : "bg-white/90 backdrop-blur-md py-3 md:py-6"
                 }`}
         >
-            <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <div className="container mx-auto px-4 md:px-12 flex justify-between items-center">
                 {/* Logo */}
                 <a
                     href="#home"
                     onClick={(e) => handleNavClick(e, "#home")}
-                    className={`flex items-center gap-3 z-50 cursor-pointer transition-opacity duration-300 ${isOpen ? "opacity-0 pointer-events-none" : "opacity-100"
+                    className={`flex items-center gap-2 md:gap-3 z-50 cursor-pointer transition-opacity duration-300 ${isOpen ? "opacity-0 pointer-events-none" : "opacity-100"
                         }`}
                 >
                     <img
                         src="/logo.png"
                         alt="Kumar Waterproofing Solution"
-                        className="h-16 md:h-20 w-auto object-contain"
+                        className="h-12 md:h-20 w-auto object-contain"
                     />
                     <div>
-                        <span className="text-xl font-bold text-gray-900 block leading-none">KWS</span>
-                        <span className="text-[10px] text-gray-500 tracking-wider uppercase">Waterproofing</span>
+                        <span className="text-lg md:text-xl font-bold text-gray-900 block leading-none">KWS</span>
+                        <span className="text-[9px] md:text-[10px] text-gray-500 tracking-wider uppercase">Waterproofing</span>
                     </div>
                 </a>
 
