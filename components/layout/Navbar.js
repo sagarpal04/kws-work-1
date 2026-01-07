@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 
 const navLinks = [
     { name: "Home", href: "#home" },
@@ -56,12 +55,11 @@ export default function Navbar() {
                     className={`flex items-center gap-3 z-50 cursor-pointer transition-opacity duration-300 ${isOpen ? "opacity-0 pointer-events-none" : "opacity-100"
                         }`}
                 >
-                    <Image src="/logo.png" alt="Kumar Waterproofing Solution" width={100} height={100} />
-                    {/* <img
+                    <img
                         src="/logo.png"
                         alt="Kumar Waterproofing Solution"
                         className="h-16 md:h-20 w-auto object-contain"
-                    /> */}
+                    />
                     <div>
                         <span className="text-xl font-bold text-gray-900 block leading-none">KWS</span>
                         <span className="text-[10px] text-gray-500 tracking-wider uppercase">Waterproofing</span>
