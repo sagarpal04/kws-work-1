@@ -76,13 +76,13 @@ const logoFiles = [
 
 export default function Brands() {
     return (
-        <div className="w-full py-20 bg-white overflow-hidden">
+        <div className="w-full py-8 md:py-16 bg-white overflow-hidden">
             {/* Heading */}
-            <div className="text-center mb-16">
-                <p className="text-xs text-gray-400 uppercase tracking-widest mb-3 font-semibold">
+            <div className="text-center mb-8 md:mb-12 px-4">
+                <p className="text-[10px] md:text-xs text-gray-400 uppercase tracking-widest mb-2 md:mb-3 font-semibold">
                     AS FEATURED IN
                 </p>
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+                <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
                     Leading Brands We Use
                 </h2>
             </div>
@@ -97,11 +97,11 @@ export default function Brands() {
 
                 {/* Scrolling Content */}
                 <div className="flex whitespace-nowrap">
-                    <div className="inline-flex gap-12 animate-scroll items-center">
+                    <div className="inline-flex gap-8 md:gap-12 animate-scroll items-center">
                         {[...logoFiles, ...logoFiles, ...logoFiles].map((logo, i) => (
                             <div
                                 key={i}
-                                className="inline-flex items-center justify-center w-40 h-24 flex-shrink-0"
+                                className="inline-flex items-center justify-center w-28 h-16 md:w-40 md:h-24 flex-shrink-0"
                             >
                                 <img
                                     src={`/logos/${logo}`}
@@ -110,7 +110,7 @@ export default function Brands() {
                                         e.target.style.display = 'none';
                                         console.log('Failed to load:', logo);
                                     }}
-                                    className="max-h-16 max-w-full w-auto h-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+                                    className="max-h-12 md:max-h-16 max-w-full w-auto h-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
                                 />
                             </div>
                         ))}

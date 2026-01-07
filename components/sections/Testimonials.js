@@ -83,17 +83,17 @@ import { Building2 } from "lucide-react";
 
 function TestimonialCard({ item }) {
     return (
-        <div className="bg-white p-4 rounded-xl shadow-lg border border-gray-100 w-full mb-6 break-inside-avoid">
-            <div className="flex items-center gap-3 mb-3">
-                <div className="relative w-10 h-10 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center text-gray-400">
-                    <Building2 size={20} />
+        <div className="bg-white p-3 md:p-4 rounded-lg md:rounded-xl shadow-lg border border-gray-100 w-full mb-4 md:mb-6 break-inside-avoid">
+            <div className="flex items-center gap-2 md:gap-3 mb-2 md:mb-3">
+                <div className="relative w-8 h-8 md:w-10 md:h-10 rounded-full overflow-hidden bg-gray-100 flex items-center justify-center text-gray-400">
+                    <Building2 size={16} className="md:w-5 md:h-5" />
                 </div>
                 <div>
-                    <h4 className="font-bold text-sm text-gray-900">{item.name}</h4>
-                    {item.location && <p className="text-xs text-gray-500">{item.location}</p>}
+                    <h4 className="font-bold text-xs md:text-sm text-gray-900">{item.name}</h4>
+                    {item.location && <p className="text-[10px] md:text-xs text-gray-500">{item.location}</p>}
                 </div>
             </div>
-            <p className="text-sm text-gray-600 leading-relaxed">"{item.content}"</p>
+            <p className="text-xs md:text-sm text-gray-600 leading-relaxed">"{item.content}"</p>
         </div>
     );
 }
@@ -119,20 +119,20 @@ function MarqueeColumn({ items, duration, reverse = false }) {
 
 export default function Testimonials() {
     return (
-        <section className="py-24 bg-brand-light overflow-hidden relative">
-            <div className="container mx-auto px-6 md:px-12 relative z-10">
+        <section className="py-12 md:py-20 bg-brand-light overflow-hidden relative">
+            <div className="container mx-auto px-4 md:px-12 relative z-10">
 
                 {/* Visual Background Columns (Absolute) */}
-                <div className="absolute inset-0 z-0 flex justify-between gap-4 md:gap-8 px-4 opacity-40 pointer-events-none md:opacity-100 md:pointer-events-auto mask-linear-fade">
-                    {/* Only show animations on larger screens to avoid clutter on mobile */}
-                    <div className="hidden md:flex flex-col w-1/4 h-[150vh] -mt-20">
+                <div className="absolute inset-0 z-0 flex justify-between gap-2 md:gap-8 px-2 md:px-4 opacity-70 md:opacity-100 pointer-events-none md:pointer-events-auto mask-linear-fade">
+                    {/* Show 2 columns on mobile, 4 on desktop */}
+                    <div className="flex flex-col w-1/2 md:w-1/4 h-[120vh] md:h-[150vh] -mt-10 md:-mt-20">
                         <MarqueeColumn items={col1} duration={20} />
                     </div>
-                    <div className="hidden md:flex flex-col w-1/4 h-[150vh] -mt-20">
+                    <div className="flex flex-col w-1/2 md:w-1/4 h-[120vh] md:h-[150vh] -mt-10 md:-mt-20">
                         <MarqueeColumn items={col2} duration={25} reverse />
                     </div>
                     {/* Center space is left empty for text on desktop */}
-                    <div className="w-full md:w-1/2" />
+                    <div className="hidden md:block w-1/2" />
 
                     <div className="hidden md:flex flex-col w-1/4 h-[150vh] -mt-20">
                         <MarqueeColumn items={col3} duration={22} />
@@ -143,21 +143,21 @@ export default function Testimonials() {
                 </div>
 
                 {/* Central Content */}
-                <div className="relative z-20 max-w-3xl mx-auto text-center pt-10 md:pt-20">
+                <div className="relative z-20 max-w-3xl mx-auto text-center pt-8 md:pt-16">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-3xl shadow-2xl border border-white/50"
+                        className="bg-white/90 backdrop-blur-xl p-6 md:p-10 rounded-2xl md:rounded-3xl shadow-2xl border border-white/50"
                     >
-                        <span className="inline-block py-1 px-3 rounded-full bg-gray-100 text-gray-600 font-medium text-sm mb-6 border border-gray-200">
+                        <span className="inline-block py-1 px-2.5 md:px-3 rounded-full bg-gray-100 text-gray-600 font-medium text-xs md:text-sm mb-4 md:mb-6 border border-gray-200">
                             Testimonials
                         </span>
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+                        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 tracking-tight">
                             Notable Clients
                         </h2>
-                        <p className="text-gray-600 mb-8 max-w-lg mx-auto">
+                        <p className="text-sm md:text-base text-gray-600 mb-6 md:mb-8 max-w-lg mx-auto">
                             Professionals trust KWS solutions to protect their most valuable assets. We deliver excellence in every project.
                         </p>
                     </motion.div>

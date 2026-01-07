@@ -47,47 +47,47 @@ export default function FindUs() {
     };
 
     return (
-        <section id="contact" className="py-24 bg-gradient-to-br from-gray-50 via-white to-green-50 scroll-mt-20">
+        <section id="contact" className="py-12 md:py-20 bg-gradient-to-br from-gray-50 via-white to-green-50 scroll-mt-20">
             <div className="container mx-auto px-6 md:px-12 max-w-7xl">
                 <div className="flex flex-col lg:flex-row gap-12">
 
                     {/* Left: Contact Info */}
                     <div className="w-full lg:w-1/2 space-y-8">
-                        <div className="mb-8">
-                            <span className="inline-block text-sm font-bold text-green-600 uppercase tracking-wider mb-3 bg-green-50 px-4 py-1.5 rounded-full">
+                        <div className="mb-6 md:mb-8">
+                            <span className="inline-block text-xs md:text-sm font-bold text-green-600 uppercase tracking-wider mb-2 md:mb-3 bg-green-50 px-3 md:px-4 py-1 md:py-1.5 rounded-full">
                                 Contact Info
                             </span>
-                            <h2 className="text-5xl font-bold text-gray-900 mt-4 mb-4 leading-tight">
+                            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mt-3 md:mt-4 mb-3 md:mb-4 leading-tight">
                                 Keep In Touch
                             </h2>
-                            <p className="text-gray-600 text-lg leading-relaxed">
+                            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                                 We prioritize responding to your inquiries promptly to ensure you receive the assistance you need in a timely manner.
                             </p>
                         </div>
 
-                        <div className="space-y-4">
+                        <div className="space-y-3 md:space-y-4">
                             {/* Phone */}
-                            <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
-                                <div className="flex items-center gap-5">
-                                    <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                                        <Phone size={24} />
+                            <div className="bg-white p-3 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
+                                <div className="flex items-center gap-3 md:gap-4">
+                                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg md:rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                        <Phone size={18} className="md:w-5 md:h-5" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-gray-900 text-lg mb-1">Call Us</h3>
-                                        <p className="text-gray-900 font-bold text-xl">+91 76782 81211</p>
+                                        <h3 className="font-bold text-gray-900 text-sm md:text-base mb-0.5 md:mb-1">Call Us</h3>
+                                        <p className="text-gray-900 font-bold text-base md:text-lg">+91 76782 81211</p>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Email */}
-                            <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
-                                <div className="flex items-center gap-5">
-                                    <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                                        <Mail size={24} />
+                            <div className="bg-white p-3 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
+                                <div className="flex items-center gap-3 md:gap-4">
+                                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg md:rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                        <Mail size={18} className="md:w-5 md:h-5" />
                                     </div>
                                     <div className="overflow-hidden">
-                                        <h3 className="font-bold text-gray-900 text-lg mb-1">Email Now</h3>
-                                        <p className="text-gray-900 font-bold text-base break-words">
+                                        <h3 className="font-bold text-gray-900 text-sm md:text-base mb-0.5 md:mb-1">Email Now</h3>
+                                        <p className="text-gray-900 font-bold text-xs md:text-sm break-words">
                                             kumarwaterproofingsolution@gmail.com
                                         </p>
                                     </div>
@@ -95,14 +95,14 @@ export default function FindUs() {
                             </div>
 
                             {/* GST */}
-                            <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
-                                <div className="flex items-center gap-5">
-                                    <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                                        <FileText size={24} />
+                            <div className="bg-white p-3 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
+                                <div className="flex items-center gap-3 md:gap-4">
+                                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg md:rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                        <FileText size={18} className="md:w-5 md:h-5" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-gray-900 text-lg mb-1">GST Registration</h3>
-                                        <p className="text-gray-900 font-bold font-mono tracking-wide">
+                                        <h3 className="font-bold text-gray-900 text-sm md:text-base mb-0.5 md:mb-1">GST Registration</h3>
+                                        <p className="text-gray-900 font-bold font-mono tracking-wide text-xs md:text-sm">
                                             09MHQPK7164L1Z7
                                         </p>
                                     </div>
@@ -110,14 +110,14 @@ export default function FindUs() {
                             </div>
 
                             {/* Head Office */}
-                            <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
-                                <div className="flex items-start gap-5">
-                                    <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                                        <MapPin size={24} />
+                            <div className="bg-white p-3 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
+                                <div className="flex items-start gap-3 md:gap-4">
+                                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg md:rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                        <MapPin size={18} className="md:w-5 md:h-5" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-gray-900 text-lg mb-1">Head Office</h3>
-                                        <p className="text-gray-900 font-bold leading-relaxed">
+                                        <h3 className="font-bold text-gray-900 text-sm md:text-base mb-0.5 md:mb-1">Head Office</h3>
+                                        <p className="text-gray-900 font-semibold leading-relaxed text-xs md:text-sm">
                                             Vandana Enclave, Shital Vihar, Khora Colony, Sector 62, Ghaziabad, Noida, Uttar Pradesh 201020
                                         </p>
                                     </div>
@@ -125,14 +125,14 @@ export default function FindUs() {
                             </div>
 
                             {/* Branch Office */}
-                            <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
-                                <div className="flex items-start gap-5">
-                                    <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                                        <Building2 size={24} />
+                            <div className="bg-white p-3 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
+                                <div className="flex items-start gap-3 md:gap-4">
+                                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg md:rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                        <Building2 size={18} className="md:w-5 md:h-5" />
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-gray-900 text-lg mb-1">Branch Office</h3>
-                                        <p className="text-gray-900 font-bold leading-relaxed">
+                                        <h3 className="font-bold text-gray-900 text-sm md:text-base mb-0.5 md:mb-1">Branch Office</h3>
+                                        <p className="text-gray-900 font-semibold leading-relaxed text-xs md:text-sm">
                                             H.No – S–319, School Block, Block S1, Shakarpur, Delhi – 110092
                                         </p>
                                     </div>
@@ -143,10 +143,10 @@ export default function FindUs() {
 
                     {/* Right: Form */}
                     <div className="w-full lg:w-1/2 lg:sticky lg:top-24 h-fit">
-                        <div className="bg-white p-8 md:p-10 rounded-3xl shadow-2xl border border-gray-100">
-                            <div className="mb-8">
-                                <h3 className="text-3xl font-bold text-gray-900 mb-2">Send us a message</h3>
-                                <p className="text-gray-500">We'll get back to you as soon as possible</p>
+                        <div className="bg-white p-5 md:p-8 rounded-2xl md:rounded-3xl shadow-2xl border border-gray-100">
+                            <div className="mb-6 md:mb-8">
+                                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Send us a message</h3>
+                                <p className="text-gray-500 text-sm md:text-base">We'll get back to you as soon as possible</p>
                             </div>
 
                             <div className="space-y-5">
