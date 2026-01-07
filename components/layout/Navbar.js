@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
     { name: "Home", href: "#home" },
@@ -55,11 +56,12 @@ export default function Navbar() {
                     className={`flex items-center gap-3 z-50 cursor-pointer transition-opacity duration-300 ${isOpen ? "opacity-0 pointer-events-none" : "opacity-100"
                         }`}
                 >
-                    <img
+                    <Image src="/logo.png" alt="Kumar Waterproofing Solution" width={100} height={100} />
+                    {/* <img
                         src="/logo.png"
                         alt="Kumar Waterproofing Solution"
                         className="h-16 md:h-20 w-auto object-contain"
-                    />
+                    /> */}
                     <div>
                         <span className="text-xl font-bold text-gray-900 block leading-none">KWS</span>
                         <span className="text-[10px] text-gray-500 tracking-wider uppercase">Waterproofing</span>
@@ -99,8 +101,6 @@ export default function Navbar() {
                 <button
                     className="md:hidden z-50 text-gray-700"
                     onClick={() => setIsOpen(!isOpen)}
-                    aria-label={isOpen ? "Close menu" : "Open menu"}
-                    aria-expanded={isOpen}
                 >
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
