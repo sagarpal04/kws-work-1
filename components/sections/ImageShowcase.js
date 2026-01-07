@@ -57,6 +57,8 @@ export default function ImageShowcase() {
                                 src={project.src}
                                 alt={`Project ${(i % projects.length) + 1}`}
                                 fill
+                                sizes="(max-width: 768px) 70vw, 420px"
+                                loading="lazy"
                                 className="object-cover"
                             />
 

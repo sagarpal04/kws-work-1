@@ -1,64 +1,6 @@
-// "use client";
-
-// import { motion } from "framer-motion";
-
-// const brands = [
-//     "Dr. Fixit",
-//     "Zydex",
-//     "STP Limited",
-//     "Sika",
-//     "Fosroc",
-//     "X-Chem",
-//     "Star",
-//     "MYK Arment",
-// ];
-
-// export default function Brands() {
-//     return (
-//         <section className="py-20 bg-white border-t border-slate-100 overflow-hidden">
-//             <div className="container mx-auto px-6">
-//                 {/* Heading */}
-//                 <h2 className="text-center text-sm md:text-base font-semibold text-[#8A8A8A] uppercase tracking-[0.3em] mb-12">
-//                     Leading Brands We Use
-//                 </h2>
-
-//                 {/* Marquee */}
-//                 <div className="relative">
-//                     {/* Fade edges */}
-//                     <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10" />
-//                     <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10" />
-
-//                     <motion.div
-//                         className="flex gap-14 md:gap-20 items-center"
-//                         animate={{ x: ["0%", "-50%"] }}
-//                         transition={{
-//                             duration: 35,
-//                             ease: "linear",
-//                             repeat: Infinity,
-//                         }}
-//                     >
-//                         {[...brands, ...brands].map((brand, i) => (
-//                             <span
-//                                 key={i}
-//                                 className="
-//                   text-xl md:text-2xl font-semibold
-//                   text-[#8A8A8A]
-//                   hover:text-green-600
-//                   transition-colors
-//                   whitespace-nowrap
-//                   select-none
-//                 "
-//                             >
-//                                 {brand}
-//                             </span>
-//                         ))}
-//                     </motion.div>
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// }
-"use client"; import React from 'react';
+"use client";
+import React from 'react';
+import Image from 'next/image';
 
 // All logo files from your logos folder
 const logoFiles = [
@@ -101,16 +43,17 @@ export default function Brands() {
                         {[...logoFiles, ...logoFiles, ...logoFiles].map((logo, i) => (
                             <div
                                 key={i}
-                                className="inline-flex items-center justify-center w-28 h-16 md:w-40 md:h-24 flex-shrink-0"
+                                className="inline-flex items-center justify-center w-28 h-16 md:w-40 md:h-24 flex-shrink-0 relative"
                             >
-                                <img
+                                <Image
                                     src={`/logos/${logo}`}
                                     alt="Brand Logo"
-                                    onError={(e) => {
-                                        e.target.style.display = 'none';
+                                    fill
+                                    className="object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+                                    sizes="(max-width: 768px) 112px, 160px"
+                                    onError={() => {
                                         console.log('Failed to load:', logo);
                                     }}
-                                    className="max-h-12 md:max-h-16 max-w-full w-auto h-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
                                 />
                             </div>
                         ))}
@@ -119,23 +62,23 @@ export default function Brands() {
             </div>
 
             <style jsx>{`
-        @keyframes scroll {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(calc(-100% / 3));
-          }
-        }
+                @keyframes scroll {
+                    from {
+                        transform: translateX(0);
+                    }
+                    to {
+                        transform: translateX(calc(-100% / 3));
+                    }
+                }
 
-        .animate-scroll {
-          animation: scroll 40s linear infinite;
-        }
+                .animate-scroll {
+                    animation: scroll 40s linear infinite;
+                }
 
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
+                .animate-scroll:hover {
+                    animation-play-state: paused;
+                }
+            `}</style>
         </div>
     );
 }

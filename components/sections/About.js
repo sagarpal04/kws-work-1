@@ -14,6 +14,7 @@ export default function About() {
                                 src="/image-17.jpg"
                                 alt="About KWS Team"
                                 fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 500px"
                                 className="object-cover"
                             />
 

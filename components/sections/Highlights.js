@@ -38,6 +38,7 @@ export default function Highlights() {
                                     src="/image-7.jpg"
                                     alt="Workers"
                                     fill
+                                    sizes="(max-width: 768px) 80vw, (max-width: 1024px) 40vw, 400px"
                                     className="object-cover"
                                 />
 
@@ -48,6 +49,7 @@ export default function Highlights() {
                                     src="/image-8.jpg"
                                     alt="Workers Details"
                                     fill
+                                    sizes="(max-width: 768px) 60vw, (max-width: 1024px) 30vw, 300px"
                                     className="object-cover"
                                 />
 
