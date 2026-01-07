@@ -92,7 +92,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom */}
-            <div className="border-t border-white/5 py-6 text-center text-sm text-gray-500">
+            <div className="border-t border-white/5 py-6 text-center text-sm text-gray-400">
                 © 2025 KWS Waterproofing. All Rights Reserved
             </div>
         </footer>

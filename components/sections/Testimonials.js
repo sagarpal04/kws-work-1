@@ -89,7 +89,7 @@ function TestimonialCard({ item }) {
                     <Building2 size={16} className="md:w-5 md:h-5" />
                 </div>
                 <div>
-                    <h4 className="font-bold text-xs md:text-sm text-gray-900">{item.name}</h4>
+                    <p className="font-bold text-xs md:text-sm text-gray-900">{item.name}</p>
                     {item.location && <p className="text-[10px] md:text-xs text-gray-500">{item.location}</p>}
                 </div>
             </div>

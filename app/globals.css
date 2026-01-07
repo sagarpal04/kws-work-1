@@ -2,14 +2,16 @@
 
 @theme {
   /* ProCleaning Green Theme */
-  --color-brand-primary: #22c55e; /* Green-500 */
-  
+  --color-brand-primary: #22c55e;
+  /* Green-500 */
+
   /* Darker Green for hover/secondary */
-  --color-brand-secondary: #16a34a; /* Green-600 */
+  --color-brand-secondary: #16a34a;
+  /* Green-600 */
 
   /* Dark for text/footer */
   --color-brand-dark: #1a1f1d;
-  
+
   /* Clean White/Off-white for background */
   --color-brand-light: #ffffff;
 
@@ -20,6 +22,15 @@
   --font-sans: 'Inter', system-ui, sans-serif;
 
   --animate-float: float 6s ease-in-out infinite;
+
+  /* Override Tailwind gray colors for better accessibility */
+  /* Default gray-400 is #9CA3AF (2.8:1 contrast) - too low */
+  /* Using gray-500's value #6B7280 which has 4.6:1 contrast */
+  --color-gray-400: #6B7280;
+
+  /* Default gray-500 is #6B7280 (4.6:1 contrast) - borderline */
+  /* Using gray-600's value #4B5563 which has 7.0:1 contrast */
+  --color-gray-500: #4B5563;
 }
 
 @layer base {
