@@ -37,7 +37,7 @@ export default function ImageShowcase() {
                     transition={{
                         repeat: Infinity,
                         ease: "linear",
-                        duration: 5,
+                        duration: 30,
                     }}
                 >
                     {[...projects, ...projects].map((project, i) => (
