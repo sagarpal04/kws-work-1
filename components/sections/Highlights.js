@@ -39,6 +39,9 @@ export default function Highlights() {
                                     alt="Workers"
                                     fill
                                     className="object-cover"
+                                    sizes="(max-width: 1024px) 80vw, 400px"
+                                    quality={85}
+                                    loading="lazy"
                                 />
                             </div>
                             {/* Overlap Image */}
@@ -48,6 +51,9 @@ export default function Highlights() {
                                     alt="Workers Details"
                                     fill
                                     className="object-cover"
+                                    sizes="(max-width: 1024px) 60vw, 300px"
+                                    quality={85}
+                                    loading="lazy"
                                 />
                             </div>
                             {/* Decorative */}

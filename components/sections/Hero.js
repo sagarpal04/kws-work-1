@@ -105,6 +105,9 @@ export default function Hero() {
                                 fill
                                 className="object-cover"
                                 priority
+                                fetchPriority="high"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
+                                quality={85}
                             />
                         </div>
                         {/* Decorative Float Element */}
