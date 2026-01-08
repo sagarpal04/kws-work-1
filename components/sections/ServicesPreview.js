@@ -44,33 +44,33 @@ const services = [
 
 export default function ServicesPreview() {
     return (
-        <section id="services" className="py-24 bg-slate-50 scroll-mt-20">
-            <div className="container mx-auto px-6 md:px-12">
-                <div className="text-center mb-16">
-                    <span className="text-brand-primary font-bold tracking-wider uppercase text-sm mb-4 block">What We Do</span>
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 lh-tight">
+        <section id="services" className="py-12 md:py-24 bg-slate-50 scroll-mt-20">
+            <div className="container mx-auto px-4 md:px-12">
+                <div className="text-center mb-10 md:mb-16">
+                    <span className="text-brand-primary font-bold tracking-wider uppercase text-xs md:text-sm mb-3 md:mb-4 block">What We Do</span>
+                    <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 md:mb-4 leading-tight px-4">
                         We Always Provide The Best Service
                     </h2>
-                    <p className="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-gray-500 text-base md:text-lg max-w-2xl mx-auto leading-relaxed px-4">
                         While we specialize in custom waterproofing plans to suit your needs, most clients schedule regular protective maintenance.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
                     {services.map((service, index) => (
-                        <div key={index} className="bg-white p-6 md:p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                            <div className="w-12 h-12 md:w-14 md:h-14 bg-green-50 text-brand-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors">
-                                <service.icon size={28} />
+                        <div key={index} className="bg-white p-5 md:p-8 rounded-xl md:rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                            <div className="w-12 h-12 md:w-14 md:h-14 bg-green-50 text-brand-primary rounded-xl flex items-center justify-center mb-5 md:mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors">
+                                <service.icon size={24} className="md:w-7 md:h-7" />
                             </div>
 
-                            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                            <p className="text-gray-500 mb-4 md:mb-6 leading-relaxed">{service.desc}</p>
+                            <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-2 md:mb-3">{service.title}</h3>
+                            <p className="text-gray-500 mb-4 md:mb-6 leading-relaxed text-base md:text-base">{service.desc}</p>
 
-                            <div className="space-y-3 mb-8 border-t border-gray-50 pt-6">
+                            <div className="space-y-2.5 md:space-y-3 mb-6 md:mb-8 border-t border-gray-50 pt-4 md:pt-6">
                                 {service.features.map((feature, i) => (
-                                    <div key={i} className="flex items-start gap-3">
-                                        <CheckCircle className="shrink-0 text-green-500 mt-1" size={16} />
-                                        <span className="text-sm text-gray-600">{feature}</span>
+                                    <div key={i} className="flex items-start gap-2.5 md:gap-3">
+                                        <CheckCircle className="shrink-0 text-green-500 mt-0.5" size={16} />
+                                        <span className="text-sm md:text-sm text-gray-600 leading-snug">{feature}</span>
                                     </div>
                                 ))}
                             </div>

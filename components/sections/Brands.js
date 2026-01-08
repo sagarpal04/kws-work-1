@@ -18,13 +18,13 @@ const logoFiles = [
 
 export default function Brands() {
     return (
-        <div className="w-full py-8 md:py-16 bg-white overflow-hidden">
+        <div className="w-full py-12 md:py-16 bg-white overflow-hidden">
             {/* Heading */}
             <div className="text-center mb-8 md:mb-12 px-4">
-                <p className="text-[10px] md:text-xs text-gray-400 uppercase tracking-widest mb-2 md:mb-3 font-semibold">
+                <p className="text-xs md:text-xs text-gray-400 uppercase tracking-widest mb-2 md:mb-3 font-semibold">
                     AS FEATURED IN
                 </p>
-                <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                     Leading Brands We Use
                 </h2>
             </div>
@@ -32,25 +32,25 @@ export default function Brands() {
             {/* Marquee Container */}
             <div className="relative">
                 {/* Left Fade */}
-                <div className="absolute left-0 top-0 bottom-0 w-8 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
+                <div className="absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
 
                 {/* Right Fade */}
-                <div className="absolute right-0 top-0 bottom-0 w-8 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
+                <div className="absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
                 {/* Scrolling Content */}
                 <div className="flex whitespace-nowrap">
-                    <div className="inline-flex gap-8 md:gap-12 animate-scroll items-center">
+                    <div className="inline-flex gap-6 md:gap-12 animate-scroll items-center py-2">
                         {[...logoFiles, ...logoFiles, ...logoFiles].map((logo, i) => (
                             <div
                                 key={i}
-                                className="inline-flex items-center justify-center w-28 h-16 md:w-40 md:h-24 flex-shrink-0 relative"
+                                className="inline-flex items-center justify-center w-32 h-20 md:w-40 md:h-24 flex-shrink-0 relative bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 p-3"
                             >
                                 <Image
                                     src={`/logos/${logo}`}
                                     alt="Brand Logo"
                                     fill
-                                    className="object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
-                                    sizes="(max-width: 768px) 112px, 160px"
+                                    className="object-contain opacity-70 hover:opacity-100 transition-opacity duration-300 p-2"
+                                    sizes="(max-width: 768px) 128px, 160px"
                                     onError={() => {
                                         console.log('Failed to load:', logo);
                                     }}

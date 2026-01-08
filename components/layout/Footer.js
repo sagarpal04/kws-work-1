@@ -9,32 +9,32 @@ export default function Footer() {
             <div className="h-px bg-gradient-to-r from-transparent via-green-500/40 to-transparent" />
 
             {/* Main Footer */}
-            <div className="mx-auto max-w-6xl px-6 py-16">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-14 items-start">
+            <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14 items-start">
 
                     {/* Brand */}
                     <div>
-                        <div className="flex items-center gap-4 mb-5">
-                            <div className="relative w-14 h-14 rounded-lg overflow-hidden bg-white/5 flex items-center justify-center">
+                        <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-5">
+                            <div className="relative w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden bg-white/5 flex items-center justify-center">
                                 <img
                                     src="/logo.png"
                                     alt="KWS Waterproofing Logo"
                                     className="w-full h-full object-contain"
                                     onError={(e) => {
                                         e.currentTarget.style.display = 'none';
-                                        e.currentTarget.parentElement.innerHTML = '<div class="w-14 h-14 bg-green-500 rounded-lg flex items-center justify-center font-bold text-black text-2xl">K</div>';
+                                        e.currentTarget.parentElement.innerHTML = '<div class="w-12 h-12 md:w-14 md:h-14 bg-green-500 rounded-lg flex items-center justify-center font-bold text-black text-xl md:text-2xl">K</div>';
                                     }}
                                 />
                             </div>
                             <div>
-                                <p className="font-bold text-xl leading-none">KWS</p>
-                                <span className="text-sm text-gray-400 tracking-wide">
+                                <p className="font-bold text-lg md:text-xl leading-none">KWS</p>
+                                <span className="text-xs md:text-sm text-gray-400 tracking-wide">
                                     Waterproofing
                                 </span>
                             </div>
                         </div>
 
-                        <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
+                        <p className="text-sm md:text-sm text-gray-400 leading-relaxed max-w-sm">
                             Stay updated with our latest waterproofing tips, service updates,
                             and helpful articles on maintaining a leak-free home.
                         </p>
@@ -42,10 +42,10 @@ export default function Footer() {
 
                     {/* Company */}
                     <div>
-                        <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-6">
+                        <h3 className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4 md:mb-6">
                             Company
                         </h3>
-                        <ul className="space-y-4 text-sm text-gray-400">
+                        <ul className="space-y-3 md:space-y-4 text-sm text-gray-400">
                             <li>
                                 <Link href="/about" className="hover:text-green-500 transition-colors duration-200">
                                     About Us
@@ -66,10 +66,10 @@ export default function Footer() {
 
                     {/* Know More */}
                     <div>
-                        <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-6">
+                        <h3 className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4 md:mb-6">
                             Know More
                         </h3>
-                        <ul className="space-y-4 text-sm text-gray-400">
+                        <ul className="space-y-3 md:space-y-4 text-sm text-gray-400">
                             <li>
                                 <Link href="/support" className="hover:text-green-500 transition-colors duration-200">
                                     Support
@@ -92,7 +92,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom */}
-            <div className="border-t border-white/5 py-6 text-center text-sm text-gray-400">
+            <div className="border-t border-white/5 py-5 md:py-6 px-4 text-center text-xs md:text-sm text-gray-400">
                 © 2025 KWS Waterproofing. All Rights Reserved
             </div>
         </footer>
