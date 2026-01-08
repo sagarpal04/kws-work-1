@@ -11,7 +11,7 @@ const projects = [
     { src: "/image-5.jpg" },
     { src: "/image-6.jpg" },
 ];
-
+// final 
 export default function ImageShowcase() {
     return (
         <section className="py-12 md:py-20 bg-[#f8fafc] overflow-hidden">
