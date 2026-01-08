@@ -15,8 +15,8 @@ export default function About() {
                                 alt="About KWS Team"
                                 fill
                                 className="object-cover"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 500px"
-                                quality={85}
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 480px, 500px"
+                                quality={80}
                                 loading="lazy"
                             />
                         </div>

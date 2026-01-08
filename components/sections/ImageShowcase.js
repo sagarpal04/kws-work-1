@@ -58,8 +58,8 @@ export default function ImageShowcase() {
                                 alt={`Project ${(i % projects.length) + 1}`}
                                 fill
                                 className="object-cover"
-                                sizes="(max-width: 768px) 75vw, 420px"
-                                quality={80}
+                                sizes="(max-width: 640px) 384px, (max-width: 1024px) 420px, 420px"
+                                quality={75}
                                 loading="lazy"
                             />
 

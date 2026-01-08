@@ -39,8 +39,8 @@ export default function Highlights() {
                                     alt="Workers"
                                     fill
                                     className="object-cover"
-                                    sizes="(max-width: 1024px) 80vw, 400px"
-                                    quality={85}
+                                    sizes="(max-width: 640px) 280px, (max-width: 1024px) 320px, 400px"
+                                    quality={80}
                                     loading="lazy"
                                 />
                             </div>
@@ -51,8 +51,8 @@ export default function Highlights() {
                                     alt="Workers Details"
                                     fill
                                     className="object-cover"
-                                    sizes="(max-width: 1024px) 60vw, 300px"
-                                    quality={85}
+                                    sizes="(max-width: 640px) 225px, (max-width: 1024px) 240px, 300px"
+                                    quality={80}
                                     loading="lazy"
                                 />
                             </div>
