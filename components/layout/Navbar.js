@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -132,12 +132,21 @@ export default function Navbar() {
 
             </nav>
 
+            {/* Mobile Phone Floating Button - Left side */}
+            <a
+                href="tel:+917678281211"
+                className="fixed bottom-6 left-6 z-[100] md:hidden flex items-center justify-center w-14 h-14 bg-blue-600 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300"
+                aria-label="Call us"
+            >
+                <Phone className="w-6 h-6 text-white" />
+            </a>
+
             {/* Mobile WhatsApp Floating Button - Outside nav for proper positioning */}
             <a
                 href="https://wa.me/917678281211"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="fixed bottom-6 right-6 z-[100] md:hidden flex items-center justify-center w-14 h-14 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 animate-pulse"
+                className="fixed bottom-6 right-6 z-[100] md:hidden flex items-center justify-center w-14 h-14 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 "
                 aria-label="Contact us on WhatsApp"
             >
                 <svg viewBox="0 0 24 24" fill="white" className="w-8 h-8" aria-hidden="true">
