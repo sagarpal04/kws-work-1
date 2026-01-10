@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const navLinks = [
     { name: "Home", href: "#home" },
@@ -51,9 +52,8 @@ export default function Navbar() {
             >
                 <div className="container mx-auto px-4 md:px-12 flex justify-between items-center">
                     {/* Logo */}
-                    <a
-                        href="#home"
-                        onClick={(e) => handleNavClick(e, "#home")}
+                    <Link
+                        href="/"
                         className={`flex items-center gap-2 md:gap-3 z-50 cursor-pointer transition-opacity duration-300 ${isOpen ? "opacity-0 pointer-events-none" : "opacity-100"
                             }`}
                     >
@@ -71,7 +71,7 @@ export default function Navbar() {
                             <span className="text-lg md:text-xl font-bold text-gray-900 block leading-none">KWS</span>
                             <span className="text-[9px] md:text-[10px] text-gray-500 tracking-wider uppercase">Waterproofing</span>
                         </div>
-                    </a>
+                    </Link>
 
                     {/* Desktop Nav */}
                     <div className="hidden md:flex items-center gap-8">

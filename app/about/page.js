@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function AboutPage() {
     return (
-        <div className="bg-white">
+        <div className="bg-white mt-20">
             {/* Hero Banner */}
             <div className="bg-brand-light py-20 lg:py-28 relative overflow-hidden">
                 <div className="container mx-auto px-6 md:px-12 text-center relative z-10">
@@ -29,10 +29,13 @@ export default function AboutPage() {
                     <div className="w-full lg:w-1/2">
                         <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop"
+                                src="/image-17.jpg"
                                 alt="About KWS Team"
                                 fill
                                 className="object-cover"
+                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 480px, 500px"
+                                quality={80}
+                                loading="lazy"
                             />
                         </div>
                     </div>

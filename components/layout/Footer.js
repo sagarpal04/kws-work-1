@@ -14,7 +14,7 @@ export default function Footer() {
 
                     {/* Brand */}
                     <div>
-                        <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-5">
+                        <Link href="/" className="flex items-center gap-3 md:gap-4 mb-4 md:mb-5 hover:opacity-80 transition-opacity">
                             <div className="relative w-12 h-12 md:w-14 md:h-14 rounded-lg overflow-hidden bg-white/5 flex items-center justify-center">
                                 <img
                                     src="/logo.png"
@@ -32,7 +32,7 @@ export default function Footer() {
                                     Waterproofing
                                 </span>
                             </div>
-                        </div>
+                        </Link>
 
                         <p className="text-sm md:text-sm text-gray-400 leading-relaxed max-w-sm">
                             Stay updated with our latest waterproofing tips, service updates,

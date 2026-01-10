@@ -67,7 +67,7 @@ export default function FindUs() {
 
                         <div className="space-y-3 md:space-y-4">
                             {/* Phone */}
-                            <div className="bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
+                            <a href="tel:+917678281211" className="block bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
                                 <div className="flex items-center gap-3 md:gap-4">
                                     <div className="w-11 h-11 md:w-12 md:h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg md:rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                                         <Phone size={20} className="md:w-5 md:h-5" />
@@ -77,10 +77,10 @@ export default function FindUs() {
                                         <p className="text-gray-900 font-bold text-base md:text-lg">+91 76782 81211</p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
                             {/* Email */}
-                            <div className="bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
+                            <a href="mailto:kumarwaterproofingsolution@gmail.com" className="block bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
                                 <div className="flex items-center gap-3 md:gap-4">
                                     <div className="w-11 h-11 md:w-12 md:h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg md:rounded-xl flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                                         <Mail size={20} className="md:w-5 md:h-5" />
@@ -92,7 +92,7 @@ export default function FindUs() {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
 
                             {/* GST */}
                             <div className="bg-white p-4 md:p-5 rounded-xl md:rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200 group">
