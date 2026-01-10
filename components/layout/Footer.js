@@ -10,7 +10,7 @@ export default function Footer() {
 
             {/* Main Footer */}
             <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14 items-start">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14">
 
                     {/* Brand */}
                     <div>
@@ -34,7 +34,7 @@ export default function Footer() {
                             </div>
                         </Link>
 
-                        <p className="text-sm md:text-sm text-gray-400 leading-relaxed max-w-sm">
+                        <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
                             Stay updated with our latest waterproofing tips, service updates,
                             and helpful articles on maintaining a leak-free home.
                         </p>
@@ -54,35 +54,6 @@ export default function Footer() {
                             <li>
                                 <Link href="/services" className="hover:text-green-500 transition-colors duration-200">
                                     Services
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/team" className="hover:text-green-500 transition-colors duration-200">
-                                    Our Team
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Know More */}
-                    <div>
-                        <h3 className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4 md:mb-6">
-                            Know More
-                        </h3>
-                        <ul className="space-y-3 md:space-y-4 text-sm text-gray-400">
-                            <li>
-                                <Link href="/support" className="hover:text-green-500 transition-colors duration-200">
-                                    Support
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/privacy" className="hover:text-green-500 transition-colors duration-200">
-                                    Privacy Policy
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/terms" className="hover:text-green-500 transition-colors duration-200">
-                                    Terms & Conditions
                                 </Link>
                             </li>
                         </ul>
