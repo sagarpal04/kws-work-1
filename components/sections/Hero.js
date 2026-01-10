@@ -71,10 +71,11 @@ export default function Hero() {
                             <p className="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 md:mb-3">Specialized In:</p>
                             <div className="flex flex-wrap gap-2">
                                 {[
-                                    "Terrace Waterproofing",
+                                    "Roof / Terrace Waterproofing",
                                     "Basement Waterproofing",
                                     "Bathroom / Tank Waterproofing",
-                                    "Residential / Commercial / Industrial"
+                                    "Swimming Pool Waterproofing",
+                                    "Residential / Commercial / Industrial Waterproofing"
                                 ].map((service, i) => (
                                     <span key={i} className="px-2.5 py-1.5 md:px-3 md:py-1.5 bg-white border border-gray-200 rounded-lg text-xs md:text-sm font-medium text-gray-600 shadow-sm">
                                         {service}
