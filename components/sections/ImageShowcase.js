@@ -30,6 +30,13 @@ const projects = [
     { src: "/116.jpg" },
     { src: "/117.jpg" },
     { src: "/118.jpg" },
+    { src: "/119.jpg" },
+    { src: "/120.jpg" },
+    { src: "/121.jpg" },
+    { src: "/122.jpg" },
+    { src: "/123.jpg" },
+    { src: "/124.jpg" },
+    { src: "/125.jpg" },
 ];
 // final 
 export default function ImageShowcase() {
