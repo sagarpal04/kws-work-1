@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 // Placeholder images for the masonry layout
 const testimonials = [
@@ -149,17 +150,24 @@ export default function Testimonials() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="bg-white/90 backdrop-blur-xl p-6 md:p-10 rounded-2xl md:rounded-3xl shadow-2xl border border-white/50"
                     >
-                        <span className="inline-block py-1 px-2.5 md:px-3 rounded-full bg-gray-100 text-gray-600 font-medium text-xs md:text-sm mb-4 md:mb-6 border border-gray-200">
-                            Testimonials
-                        </span>
-                        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 tracking-tight">
-                            Notable Clients
-                        </h2>
-                        <p className="text-sm md:text-base text-gray-600 mb-6 md:mb-8 max-w-lg mx-auto">
-                            Professionals trust KWS solutions to protect their most valuable assets. We deliver excellence in every project.
-                        </p>
+                        <Link
+                            href="/clients"
+                            className="block bg-white/90 backdrop-blur-xl p-6 md:p-10 rounded-2xl md:rounded-3xl shadow-2xl border border-white/50 hover:scale-[1.02] transition-transform duration-300 cursor-pointer group"
+                        >
+                            <span className="inline-block py-1 px-2.5 md:px-3 rounded-full bg-gray-100 text-gray-600 font-medium text-xs md:text-sm mb-4 md:mb-6 border border-gray-200 group-hover:bg-green-50 group-hover:text-green-600 group-hover:border-green-200 transition-colors">
+                                Testimonials
+                            </span>
+                            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 tracking-tight group-hover:text-green-700 transition-colors">
+                                Notable Clients
+                            </h2>
+                            <p className="text-sm md:text-base text-gray-600 mb-6 md:mb-8 max-w-lg mx-auto">
+                                Professionals trust KWS solutions to protect their most valuable assets. We deliver excellence in every project.
+                            </p>
+                            <div className="flex items-center justify-center gap-2 text-green-600 font-semibold text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+                                View All Clients <ArrowRight size={18} />
+                            </div>
+                        </Link>
                     </motion.div>
                 </div>
             </div>
