@@ -198,7 +198,6 @@ export default function ContactSection() {
                                     name="phone"
                                     value={formData.phone}
                                     onChange={handleChange}
-                                    placeholder="+91 98765 43210"
                                     className="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all outline-none text-gray-700 placeholder-gray-400"
                                 />
                             </div>
