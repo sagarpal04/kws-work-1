@@ -189,7 +189,6 @@ export default function FindUs() {
                                         value={formData.phone}
                                         onChange={handleChange}
                                         type="tel"
-                                        placeholder="+91 12345 67890"
                                         className="w-full px-4 py-3.5 md:px-5 md:py-4 rounded-xl border-2 border-gray-200 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent focus:bg-white transition-all text-gray-900 placeholder-gray-400 text-[15px] md:text-base"
                                     />
                                 </div>
