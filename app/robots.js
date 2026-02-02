@@ -5,6 +5,6 @@ export default function robots() {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://www.kumarwaterproofingsolution.com/sitemap.xml',
+        sitemap: 'https://www.kwsindia.in/sitemap.xml',
     }
 }

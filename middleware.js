@@ -6,7 +6,7 @@ export function middleware(request) {
     // Check if the hostname is 'kwsindia.in' (without www)
     if (url.hostname === 'kwsindia.in') {
         url.hostname = 'www.kwsindia.in';
-        return NextResponse.redirect(url);
+        return NextResponse.redirect(url, 308);
     }
 
     return NextResponse.next();
