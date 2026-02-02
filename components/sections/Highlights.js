@@ -2,65 +2,81 @@
 
 import Button from "@/components/ui/Button";
 import Image from "next/image";
+import { CheckCircle2 } from "lucide-react";
+
+const projects = [
+    {
+        title: "Terrace Waterproofing",
+        location: "East Delhi",
+        problem: "Severe leakage during monsoon",
+        solution: "Brick bat coba with polymer coating",
+        result: "100% leakage-free terrace",
+        image: "/image-7.jpg" // Using existing image
+    },
+    {
+        title: "Basement Waterproofing",
+        location: "Ghaziabad",
+        problem: "Seepage from retaining walls",
+        solution: "PU injection grouting",
+        result: "Permanent seepage control",
+        image: "/image-8.jpg" // Using existing image
+    }
+];
 
 export default function Highlights() {
     return (
-        <section id="features" className="py-12 md:py-24 bg-brand-light/20 scroll-mt-20">
+        <section id="projects" className="py-12 md:py-24 bg-brand-light/20 scroll-mt-20">
             <div className="container mx-auto px-4 md:px-12">
-                <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16">
+                <div className="text-center mb-12">
+                    <span className="text-xs md:text-sm font-semibold text-gray-500 uppercase tracking-wide">
+                        Our Work
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-3 mb-4">
+                        Project Highlights
+                    </h2>
+                    <p className="text-gray-600 max-w-2xl mx-auto">
+                        See how we solve complex waterproofing challenges with our expert solutions.
+                    </p>
+                </div>
 
-                    {/* Left: Text Content */}
-                    <div className="w-full lg:w-1/2 order-2 lg:order-1">
-                        <div className="mb-6 md:mb-8">
-                            <span className="text-xs md:text-sm font-semibold text-gray-500 uppercase tracking-wide">
-                                Affordable solutions
-                            </span>
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-3 md:mt-2 mb-4 md:mb-6 leading-tight">
-                                High-Quality and Friendly Services at Fair Prices
-                            </h2>
-                            <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6 md:mb-8">
-                                We provide comprehensive waterproofing services tailored to your needs.
-                                From residential leakage repair to large-scale commercial coatings,
-                                we ensure quality delivery at every step.
-                            </p>
-                            <Button href="tel:+917678281211" className="rounded-md px-6 md:px-8 w-full sm:w-auto">
-                                Free Consultation
-                            </Button>
-                        </div>
-                    </div>
-
-                    {/* Right: Layered Images */}
-                    <div className="w-full lg:w-1/2 order-1 lg:order-2">
-                        <div className="relative h-[350px] md:h-[500px] w-full">
-                            {/* Main Image */}
-                            <div className="absolute top-0 right-0 w-4/5 h-4/5 rounded-xl md:rounded-2xl overflow-hidden shadow-2xl z-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    {projects.map((project, index) => (
+                        <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                            <div className="relative h-64 w-full">
                                 <Image
-                                    src="/image-7.jpg"
-                                    alt="Workers"
+                                    src={project.image}
+                                    alt={`${project.title} - ${project.location}`}
                                     fill
                                     className="object-cover"
-                                    sizes="(max-width: 640px) 280px, (max-width: 1024px) 320px, 400px"
-                                    quality={80}
-                                    loading="lazy"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                 />
+                                <div className="absolute top-4 right-4 bg-brand-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                    {project.location}
+                                </div>
                             </div>
-                            {/* Overlap Image */}
-                            <div className="absolute bottom-0 left-0 w-3/5 h-3/5 rounded-xl md:rounded-2xl overflow-hidden shadow-2xl border-4 border-white z-20">
-                                <Image
-                                    src="/image-8.jpg"
-                                    alt="Workers Details"
-                                    fill
-                                    className="object-cover"
-                                    sizes="(max-width: 640px) 225px, (max-width: 1024px) 240px, 300px"
-                                    quality={80}
-                                    loading="lazy"
-                                />
-                            </div>
-                            {/* Decorative */}
-                            <div className="absolute top-10 right-10 w-20 h-20 bg-brand-primary/20 rounded-full blur-2xl z-0"></div>
-                        </div>
-                    </div>
+                            <div className="p-6 md:p-8">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4">{project.title}</h3>
 
+                                <div className="space-y-4">
+                                    <div>
+                                        <h4 className="text-sm font-semibold text-red-500 uppercase tracking-wide mb-1">Problem</h4>
+                                        <p className="text-gray-600">{project.problem}</p>
+                                    </div>
+                                    <div>
+                                        <h4 className="text-sm font-semibold text-blue-500 uppercase tracking-wide mb-1">Solution</h4>
+                                        <p className="text-gray-600">{project.solution}</p>
+                                    </div>
+                                    <div className="bg-green-50 p-4 rounded-xl border border-green-100 flex items-start gap-3 mt-4">
+                                        <CheckCircle2 className="text-green-600 shrink-0 mt-0.5" size={20} />
+                                        <div>
+                                            <h4 className="text-sm font-bold text-green-800 uppercase tracking-wide mb-0.5">Result</h4>
+                                            <p className="text-green-700 font-medium">{project.result}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

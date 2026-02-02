@@ -1,44 +1,41 @@
-"use client";
-
-import Button from "@/components/ui/Button";
-import { Droplets, Umbrella, Layers, Box, Zap, Sun, CheckCircle } from "lucide-react";
+import { Droplets, Umbrella, Layers, Box, Zap, Building2, CheckCircle } from "lucide-react";
 
 const services = [
     {
-        icon: Droplets,
-        title: "Chemical Waterproofing",
-        desc: "Advanced chemical solutions for complete moisture protection.",
-        features: ["Polymer modified coating", "Acrylic based coating", "Crystalline waterproofing"]
+        icon: Umbrella,
+        title: "Terrace & Roof Waterproofing",
+        desc: "Comprehensive protection for your roof against harsh weather and leakage.",
+        features: ["Brick bat coba waterproofing", "PU coating & elastomeric coating", "APP membrane waterproofing"]
     },
     {
-        icon: Umbrella,
-        title: "Membrane Waterproofing",
-        desc: "Durable membrane layers for high-traffic and critical areas.",
-        features: ["APP & SBS membrane", "EPDM & PVC membrane", "HDPE & TPO membrane"]
+        icon: Droplets,
+        title: "Bathroom & Toilet Waterproofing",
+        desc: " specialized solutions to prevent internal seepage and leakage in wet areas.",
+        features: ["Internal waterproofing before tiling", "Leakage repair without tile breaking"]
     },
     {
         icon: Layers,
-        title: "Traditional Treatments",
-        desc: "Time-tested waterproofing methods for long-lasting results.",
-        features: ["Brick bat coba", "Mud phuska", "Kota stone waterproofing"]
+        title: "Basement Waterproofing",
+        desc: "Advanced techniques to stop underground water seepage and protect foundations.",
+        features: ["Negative & positive side waterproofing", "Pressure grouting solutions"]
     },
     {
         icon: Box,
-        title: "PU & Epoxy Systems",
-        desc: "High-performance coatings for industrial and commercial needs.",
-        features: ["PU injection grouting", "PU coatings", "Industrial protective coatings"]
+        title: "Water Tank Waterproofing",
+        desc: "Safe and durable waterproofing for drinking and storage water tanks.",
+        features: ["Overhead & underground tanks", "Food-grade coating solutions"]
+    },
+    {
+        icon: Building2,
+        title: "Industrial & Commercial Waterproofing",
+        desc: "Heavy-duty waterproofing for large-scale structures and factories.",
+        features: ["Factory sheds, podiums & parking areas", "Expansion joint & structural waterproofing"]
     },
     {
         icon: Zap,
-        title: "Insulation Systems",
-        desc: "Thermal insulation solutions to reduce energy costs.",
-        features: ["PUF & XPS insulation", "EPS insulation", "Lightweight foam concrete"]
-    },
-    {
-        icon: Sun,
-        title: "Heat & Energy Solutions",
-        desc: "Innovative technologies to keep your building cool.",
-        features: ["Heat reflective coatings", "Cool roof technology", "Thermostatic tiles"]
+        title: "Custom Solutions",
+        desc: "Tailored waterproofing strategies designed for specific site conditions.",
+        features: ["Site-specific assessment", "Custom material selection"]
     }
 ];
 
