@@ -10,7 +10,7 @@ export default function Footer() {
 
             {/* Main Footer */}
             <div className="mx-auto max-w-6xl px-4 md:px-6 py-12 md:py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14">
 
                     {/* Brand */}
                     <div>
@@ -55,6 +55,27 @@ export default function Footer() {
                                 <Link href="/services" className="hover:text-green-500 transition-colors duration-200">
                                     Services
                                 </Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* Contact */}
+                    <div>
+                        <h3 className="text-xs md:text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4 md:mb-6">
+                            Contact Us
+                        </h3>
+                        <ul className="space-y-3 md:space-y-4 text-sm text-gray-400">
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1">📍</span>
+                                <a href="https://maps.app.goo.gl/x3ufvUaMYzhapAe3A" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 transition-colors">
+                                    Vandana Enclave, Shital Vihar, Khora Colony, Sector 62, Ghaziabad, Noida, Uttar Pradesh 201020
+                                </a>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <span>📞</span>
+                                <a href="tel:07678281211" className="hover:text-green-500 transition-colors">
+                                    076782 81211
+                                </a>
                             </li>
                         </ul>
                     </div>

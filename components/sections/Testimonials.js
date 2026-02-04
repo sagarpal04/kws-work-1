@@ -174,7 +174,7 @@ export default function Testimonials() {
                                     Testimonials
                                 </span>
                                 <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6 tracking-tight group-hover:text-green-700 transition-colors">
-                                    What Our Clients Say
+                                    Trusted by Industry Leaders
                                 </h2>
                                 <p className="text-sm md:text-base text-gray-600 mb-6 md:mb-8 max-w-lg mx-auto">
                                     Professionals trust KWS solutions to protect their most valuable assets. We deliver excellence in every project.
