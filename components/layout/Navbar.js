@@ -62,7 +62,7 @@ export default function Navbar() {
                             alt="Kumar Waterproofing Solution"
                             width={80}
                             height={80}
-                            className="h-16 md:h-20 w-auto object-contain"
+                            className="h-16 md:h-24 w-auto object-contain"
                             sizes="(max-width: 768px) 64px, 80px"
                             quality={90}
                             priority
