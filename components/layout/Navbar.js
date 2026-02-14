@@ -60,13 +60,14 @@ export default function Navbar() {
                         <Image
                             src="/logo.png"
                             alt="Kumar Waterproofing Solution"
-                            width={80}
-                            height={80}
-                            className="h-16 md:h-24 w-auto object-contain"
-                            sizes="(max-width: 768px) 64px, 80px"
+                            width={120}
+                            height={120}
+                            className="h-24 md:h-28 w-auto object-contain"
+                            sizes="(max-width: 768px) 96px, 112px"
                             quality={90}
                             priority
                         />
+
                         <div>
                             <span className="text-lg md:text-xl font-bold text-gray-900 block leading-none">KWS</span>
                             <span className="text-[9px] md:text-[10px] text-gray-500 tracking-wider uppercase">Waterproofing</span>
